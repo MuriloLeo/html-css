@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        a {
+            text-decoration: none;
+            font-weight: bold;
+            color: red;
+        }
+       
+        a:visited {
+            color: darkred;
+        }
+
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active{
+            color: chocolate;
+        }
+        a::before{
+            content: ' ⇒ ';
+        }
+        a::after{
+            content: ' ⇐ ';
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://jovemnerd.com.br/" target="_blank">Jovem Nerd</a></li>
+        <li><a href="https://www.youtube.com/cursoemvideo" target="_blank">Canal do Youtube</a></li>
+        <li><a href="https://estudantesuam.ead.br/login" target="_blank">Anhembi Morumbi</a></li>
+    </ul>
+</body>
+</html>
