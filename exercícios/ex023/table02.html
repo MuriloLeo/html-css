@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Grande</title>
+    <style>
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            font-family: arial;
+            position: relative;
+        }
+
+        caption{
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-style: italic;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        td, th{
+            border: 2px solid black;
+            padding: 10px;
+        }
+
+        thead, tfoot{
+            background-color: gray;
+            color: white;
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: -1;
+            background-color: gray;
+        }
+
+        tbody > tr:nth-child(odd){
+            background-color: lightgray;
+        }
+
+    -- ou pode colocar even para par e odd para ímpar
+
+        td.num{
+            text-align: right;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!-- Anatomia das tabelas 
+            THEAD
+                Pode ter: td, tr, th
+
+            TBODY
+                Pode ter: td, tr, th
+
+            TFOOT 
+                Pode ter: td, tr, th
+    -->
+
+    <table>
+        <caption>População dos Estados</caption>
+        <thead>
+            <tr>
+                <th scope="col">Unid. Federativa</th>
+                <th scope="col">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">41.919,49</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">20.450,00</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">32.765,00</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">23.093,22</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">23.093,22</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">23.093,22</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">23.093,22</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">23.093,22</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">23.093,22</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">23.093,22</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">23.093,22</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">23.093,22</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">23.093,22</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">23.093,22</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">23.093,22</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">23.093,22</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">23.093,22</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">23.093,22</td>
+            </tr>
+            
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td class="num">95.134,49</td>
+            </tr>
+        </tfoot>
+
+
+    </table>
+</body>
+</html>

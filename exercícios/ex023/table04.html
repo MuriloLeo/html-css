@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela com Dados</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 700px;
+            padding: 2px;
+            border-collapse: collapse;
+        }
+
+        tbody > tr:nth-child(odd){
+            background-color: rgb(199, 234, 246);
+        }
+        
+
+        th{
+            color: white;
+            font-style: italic;
+            background-color: rgb(107, 166, 186)
+            
+        }
+
+        th, td{
+            border: 1.5px solid black;
+            padding: 5px;
+     
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <tr class="cabeçalho">
+            <th scope="col">Grupo</th>
+            <th scope="col">Nomes</th>
+            <th scope="colgroup" colspan="3">Filmes</th>
+        </tr>
+    <tbody>
+        <tr>
+            <th rowspan="3" scope="rowgroup">Mulheres</th>
+            <td>Mayara Moura da Silva</td>
+            <td>Alien</td>
+            <td>Toy Story</td>
+            <td>Cobra Kai</td>
+        </tr>
+        <tr>
+            <td>Cirlei Moura da Silva</td>
+            <td>Orgulho e Preconceito</td>
+            <td>Moana</td>
+            <td>Wall-e</td>
+        </tr>
+        <tr>
+            <td>Jeane Oliveira Godea</td>
+            <td>The Office</td>
+            <td>Vingadores</td>
+            <td>Vizinhos</td>
+        </tr>
+        <tr>
+            <th rowspan="3" scope="rowgroup">Homens</th>
+            <td>Murilo Leonardo da Silva</td>
+            <td>Brooklyn 99</td>
+            <td>One Piece</td>
+            <td>Demolidor</td>
+        </tr>
+        <tr>
+            <td>Bruno Leonardo da Silva</td>
+            <td>ESPN</td>
+            <td>Palmeiras</td>
+            <td>Globo</td>
+        </tr>
+        <tr>
+            <td>José Leonardo da Silva</td>
+            <td>Mazzaropi</td>
+            <td>Auto da Compadecida</td>
+            <td>Zorro</td>
+        </tr>
+    </tbody>
+    </table>
+</body>
+</html>
