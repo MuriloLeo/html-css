@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox e Radio</title>
+</head>
+<body>
+    <h1>Formulário</h1>
+    <form action="cadastro.js" method="post" autocomplete="on">
+    <fieldset>
+        <legend>Gênero</legend>
+        <p>
+            <input type="radio" name="sexo" id="isxmasc"><label for="isxmasc">Masculino</label> <br>
+            <input type="radio" name="sexo" id="isxfem" checked><label for="isxfem">Feminino</label>
+        </p>
+    </fieldset>
+    <fieldset>
+        <legend>Esportes favoritos</legend>
+        <p> 
+            <input type="checkbox" name="espfut" id="iesfut"> <label for="iesfut">Futebol</label> <br>
+
+            <input type="checkbox" name="espbas" id="iesbas"> <label for="iesbas">Basquete</label> <br>
+
+            <input type="checkbox" name="espvol" id="iesvol"> <label for="iesvol">Vôlei</label> <br>
+          
+            <input type="checkbox" name="espfutame" id="iesfutame"> <label for="iesfutame">Futebol  Americano</label>
+        </p>
+    </fieldset>
+
+    <fieldset>
+        <legend>Time do Coração</legend>
+        <p>
+            <input type="checkbox" name="pal" id="ipal"><label for="ipal">Palmeiras</label> <br>
+
+            <input type="checkbox" name="cor" id="icor"><label for="icor">Corinthians</label> <br>
+
+            <input type="checkbox" name="sao" id="isao"><label for="isao">São Paulo</label> <br>
+
+            <input type="checkbox" name="san" id="isan"><label for="isan">Santos</label>
+        </p>
+    </fieldset>
+    <fieldset>
+        <legend>Qual é melhor?</legend>
+        <input type="radio" name="resp" id="ipalme"><label for="ipalme">Palmeiras</label>
+        <input type="radio" name="resp" id="icorin"><label for="icorin">Corinthians</label>
+    </fieldset>
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </p>
+</form>
+</body>
+</html>

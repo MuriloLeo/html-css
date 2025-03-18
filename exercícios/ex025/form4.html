@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de fone e email</title>
+</head>
+<body>
+    <h1>Formulário</h1>
+    <form action="cadastro.js" method="get">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <p>
+                <label for="inome">Nome</label>
+                <input type="text" name="inome" id="inome" required maxlength="10">
+            </p>
+            <p>
+                <label for="iemail">Email</label>
+                <input type="email" name="iemail" id="iemail" required autocomplete="email">
+            </p>
+            <p>
+                <label for="itelefone">Telefone: </label>
+                <input type="tel" name="itelefone" id="itelefone" required pattern="^\(\d{2}\)\d{4,5}-\d{4}$" autocomplete="tel">
+            </p>
+        </fieldset>
+        <p>
+           <input type="submit" value="Enviar">
+           <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+</body>
+</html>
